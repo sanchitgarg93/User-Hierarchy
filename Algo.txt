@@ -2,7 +2,6 @@ For representing a user hierarchy in an SQL database, there are many options lik
 -Adjacency List
 -Nested Set (or Modified Preorder Tree Traversal)
 -Nested Intervals (Mix of Nested Set & Materialized Path)
--Bridge Table (or Closure Table)
 -Flat Table (Adding Levels & Rank to Adjacency List)
 -Lineage Column (Materialized Path, Path Enumeration)
 -Multiple Lineage Columns
@@ -14,5 +13,3 @@ But for this test I prefer to use a generic, portable technique where data is mo
 queries that involve joining the table back on itself which is usually the case when storing heirachy relationship
 in the same row as the node. 
 
-That being said the method will not scale well for large, complex graphs when data gets huge. 
-Until then it's simple to understand flexible to use.
